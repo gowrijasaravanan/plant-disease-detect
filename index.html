@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0b16;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background-color: #121225;
+        }
+
+        header h2 {
+            color: #a99aff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #a99aff;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 10%;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #a99aff;
+        }
+
+        .hero p {
+            color: #c3c3d3;
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            width: fit-content;
+            margin-top: 25px;
+            padding: 13px 22px;
+            background-color: #a99aff;
+            color: #0b0b16;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        section h2 {
+            color: #a99aff;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        section p {
+            color: #c3c3d3;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #19192d;
+            border: 1px solid #353550;
+            padding: 18px 25px;
+            border-radius: 10px;
+        }
+
+        .project {
+            background-color: #19192d;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #a99aff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #121225;
+            color: #c3c3d3;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Gowrija</span></h1>
+
+        <h3>Aspiring Software Developer</h3>
+
+        <p>
+            I'm a B.Sc. Computer Science with Cognitive Systems student
+            passionate about technology, programming and problem-solving.
+            I'm learning new skills to build useful digital experiences.
+        </p>
+
+        <a href="#projects" class="btn">Explore My Work →</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I'm studying B.Sc. Computer Science with Cognitive Systems
+            at Vellalar College for Women, Erode.
+            My goal is to become a successful software developer.
+            I enjoy learning programming and exploring new technologies.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Python - Learning</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A website that introduces me, displays my skills
+                and presents my learning journey.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Student Study Planner</h3>
+            <p>
+                A project idea for organising study tasks and
+                tracking learning progress.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: your.email@example.com</p>
+        <p>Location: Erode, Tamil Nadu</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/">My LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/">My GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
